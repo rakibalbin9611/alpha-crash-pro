@@ -20,6 +20,26 @@ function removeBackGroundColorById(elementId) {
   element.classList.remove("bg-orange-400");
 }
 
+// set or display any value in ui
+function setElementValueById(elementId, value) {
+  const element = document.getElementById(elementId);
+  element.innerText = value;
+}
+
+// get the element value from dom
+function getElementValueById(elementId) {
+  const element = document.getElementById(elementId);
+  const elementValueText = element.innerText;
+  const value = parseInt(elementValueText);
+  return value;
+}
+
+function getElementTextById(elementId) {
+  const element = document.getElementById(elementId);
+  const text = element.innerText;
+  return text;
+}
+
 function getRandomAlphabet() {
   const alphabetString = "abcdefghijklmnopqrstuvwxyz";
   const alphabets = alphabetString.split("");
